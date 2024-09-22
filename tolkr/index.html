@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Visioconférence en Temps Réel</title>
+    <!-- Mise à jour de la CSP pour autoriser les scripts des domaines Firebase -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.gstatic.com https://www.googleapis.com;"> -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+
+</head>
+<body>
+    <h1>Visioconférence en Temps Réel</h1>
+
+    <!-- Vidéo locale -->
+    <video id="localVideo" autoplay playsinline muted></video>
+    <!-- Vidéo distante -->
+    <video id="remoteVideo" autoplay playsinline></video>
+
+    <!-- Contrôles pour l'appel -->
+    <div id="controls">
+        <input type="text" id="callInput" placeholder="ID de l'appel">
+        <button id="callButton">Appeler</button>
+        <button id="hangupButton" disabled>Raccroche</button>
+    </div>
+
+    <!-- Inclusion du script principal en tant que module -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

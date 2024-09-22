@@ -1,0 +1,25 @@
+/* Styles simples pour organiser les vidéos */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+video {
+  width: 45%;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+#controls {
+  margin: 20px;
+}
+#callButton, #hangupButton {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#callInput {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+}
